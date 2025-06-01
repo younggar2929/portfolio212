@@ -14,8 +14,8 @@
     <div class="menu-icon" id="menu-icon">&#9776;</div>
     <ul class="nav-links" id="nav-links">
       <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
+      <li><a href="#Skills">Skills</a></li>
+      <li><a href="#Projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul> 
   </nav>
@@ -27,49 +27,73 @@
 
   <section id="about" class="section">
     <h2>About Me</h2>
-    <p>I love creating crazy drawings and make minimalist structure, I am friendly but do not push me to the limit. </p>
+    <p>My name is Cris john nagar, studying at STI College Alabang, pursuing a Bachelor of Science in Information Technology (BSIT), where I continue to nurture my passion for technology, innovation, and personal growth. I graduated from Moreh Academy, where I specialized in Information and Communications Technology (ICT). During my senior high school years, I was an active student leader and consistently recognized as an honor student. These experiences taught me the value of leadership, discipline, and teamwork qualities that I carry with me in everything I do. I am a hardworking, committed, and passionate individual with a strong interest in technology, design, and community service. I enjoy learning new things and sharing knowledge with others. Whether it’s enhancing my technical skills, volunteering in my community, or supporting fellow youth, I am always motivated by a desire to grow and make a meaningful impact. I firmly believe in continuous self-improvement. I embrace every challenge as an opportunity to learn and expand my abilities. My ultimate goal is to build a fulfilling career where I can apply my talents, contribute to society, and inspire others through my dedication and journey. West cupang muntilua City. I am currently studying at STI ALABANG, Pursuing Bachelor of  o the limit. </p>
   </section>
 
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      <div class="project">
-        <h3>Project One</h3>
-        <p>A description of your first project.</p>
-        <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
-      </div>
-      <div class="project">
-        <h3>Project Two</h3>
-        <p>A description of your second project.</p>
-        <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+  </p>
+    </div>
+  </section>
+
+  <section id="skills" class="section" data-aos="fade-up">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Bash</div>
+        <div class="skill-card">Java</div>
       </div>
     </div>
   </section>
 
-  <section id="skills" class="section">
-    <h2>skills
-    <ul class="skills-list">
-      <li>HTML & CSS</li>
-      <li>JavaScript</li>
-      <li>bash</li>
-      <li>Git and GitHub</li>
-        </ul>
-  </section>
-  </section>
-
-  <section id="contact" class="section">
-    <h2>Contact Me at: 09099746154</h2>
-    <form action="mailto:youremail@email.com" method="POST" enctype="text/plain">
-      <input type="email" name="email" placeholder="email mo dito" required />
-      <textarea name="message" placeholder="Message mo ha" required></textarea>
-      <button type="submit">Send</button>
-    </form>
+  <section id="projects" class="section" data-aos="fade-up">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>DON'T HAVE ANY PROJECTS YET</h3>
+    </div>
+       
+  <section id="contact" class="section" data-aos="fade-up">
+    <div class="container">
+      <h2>Contact</h2>
+      <form action="https://formsubmit.co/nagarcrisjohn@gmail.com" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div class="socials">
+        <a href="https://www.facebook.com/share/16PAvjsQq5/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="mailto:Nagarcrisjohn@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.instagram.com/kidorasty__u/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@icetubes3" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>
+   
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Cris john Nagar• <a href="https://github.com/yourusername" target="_blank">GitHub</a></p>
+    <div class="container">
+      &copy; Porfolio by Cris john Nagar • 2025
+    </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+    
+
+    document.querySelector('.theme-toggle').addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+    });
+  </script>
 </body>
 </html>
